@@ -1,0 +1,10 @@
+name: First Workflow            # Name of the workflow
+on: workflow_dispatch           # Trigger: run manually from GitHub Actions tab
+jobs:
+  first-job:                    # Job ID
+    runs-on: ubuntu-latest      # Runs on the latest Ubuntu VM
+    steps:                      # Steps inside the job
+      - name: Print greeting    # Step 1: print hello
+        run: echo "Hello World!"
+      - name: Print goodbye     # Step 2: print bye
+        run: echo "Done - bye!"
